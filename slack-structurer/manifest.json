@@ -1,0 +1,19 @@
+{
+  "display_information": { "name": "구조화봇", "description": "슬랙 대화를 주제/요점/결정/액션아이템으로 구조화" },
+  "features": {
+    "bot_user": { "display_name": "구조화봇", "always_online": true },
+    "slash_commands": [
+      { "command": "/구조화", "description": "채널 또는 스레드 대화를 구조화", "usage_hint": "[메시지 수]", "should_escape": false }
+    ]
+  },
+  "oauth_config": {
+    "scopes": { "bot": ["commands", "app_mentions:read", "channels:history", "groups:history", "users:read", "chat:write"] }
+  },
+  "settings": {
+    "event_subscriptions": { "bot_events": ["app_mention"] },
+    "interactivity": { "is_enabled": false },
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": true,
+    "token_rotation_enabled": false
+  }
+}
